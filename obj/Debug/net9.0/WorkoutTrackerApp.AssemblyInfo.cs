@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkoutTrackerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c350a4510189e3e182f3e3061860cd7706b106f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bf4a63730d02e92723de087f698a861baaaf833")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkoutTrackerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkoutTrackerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
