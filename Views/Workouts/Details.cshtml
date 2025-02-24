@@ -1,0 +1,46 @@
+@model WorkoutTrackerApp.Models.Workout
+
+@{
+    ViewData["Title"] = "Workout Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <strong>Date:</strong> @Model.Date.ToShortDateString();
+</p>
+
+<h3>Exercises</h3>
+<p>
+    <a asp-controller="Exercises" asp-action="Create" asp-route-workoutId="@Model.Id">Add Exercise</a>
+</p>
+
+@if (Model.Exercises.Any())
+{
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>Weight</th>
+        </thead>
+        <tbody>
+            @foreach (var exercise in Model.Exercises)
+            {
+                <tr>
+                    <td>@exercise.Name</td>
+                    <td>@exercise.Sets</td>
+                    <td>@exercise.Reps</td>
+                    <td>@exercise.Weight</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No Exercises added yet</p>
+}
+<p>
+    <a asp-action="Index"a>Back To List</a>
+</p>
